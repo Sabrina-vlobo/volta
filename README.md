@@ -71,7 +71,7 @@ Também há menu em tela cheia, scroll suave, cursor personalizado, botões magn
 
 ## Desafios técnicos
 
-**O maior elemento da página esperava o JavaScript.** A entrada do título do hero era animada pelo Motion, então o texto só aparecia depois da hidratação. No Lighthouse mobile isso atrasava o LCP em cerca de dois segundos. Reescrevi a entrada do hero em CSS puro: ela começa no primeiro quadro, e a nota de desempenho mobile subiu de 81 para cerca de 90.
+**O maior elemento da página esperava o JavaScript.** A entrada do título do hero era animada pelo Motion, então o texto só aparecia depois da hidratação. No Lighthouse mobile isso atrasava o LCP em cerca de dois segundos. Reescrevi a entrada do hero em CSS puro: ela começa no primeiro quadro. No teste local, a nota de desempenho mobile subiu de 81 para cerca de 90; no site publicado, ficou em 99.
 
 **Galeria horizontal presa ao scroll.** A seção precisa ter exatamente a altura extra que corresponde à distância horizontal a percorrer, para cada pixel de scroll mover a faixa um pixel. Meço a largura da faixa com `ResizeObserver` e aplico a altura por estilo. No celular e com movimento reduzido, o mesmo HTML vira uma faixa com `scroll-snap`.
 
@@ -85,11 +85,11 @@ Também há menu em tela cheia, scroll suave, cursor personalizado, botões magn
 
 ## Acessibilidade e desempenho
 
-Medições do Lighthouse no build de produção, rodando localmente:
+Medições do Lighthouse no site publicado:
 
 | | Mobile | Desktop |
 |---|---|---|
-| Desempenho | cerca de 90 | 99 |
+| Desempenho | 99 | 99 |
 | Acessibilidade | 100 | 100 |
 | Boas práticas | 100 | 100 |
 | SEO | 100 | 100 |
