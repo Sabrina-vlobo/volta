@@ -143,6 +143,38 @@
     overflow: hidden;
   }
 
+  /*
+    Barra de rolagem: fina, sem trilho aparente, e acende em Volt ao passar
+    o mouse. Chrome, Edge e Safari usam os pseudo-elementos ::-webkit-scrollbar.
+    A borda na cor do fundo deixa o indicador mais fino que a área de clique.
+  */
+  html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: var(--color-asfalto);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: var(--color-concreto-escuro);
+    border: 3px solid var(--color-asfalto);
+    border-radius: 999px;
+  }
+
+  html::-webkit-scrollbar-thumb:hover,
+  html::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-volt);
+  }
+
+  /* O Firefox só entende estas duas propriedades (sem o efeito de hover). */
+  @supports not selector(::-webkit-scrollbar) {
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-concreto-escuro) var(--color-asfalto);
+    }
+  }
+
   body {
     background-color: var(--color-asfalto);
     color: var(--color-nevoa);
