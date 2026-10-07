@@ -2,7 +2,7 @@
 
 Landing page da **Volta One**, uma e-bike urbana fictícia. Projeto de portfólio de front-end, construído do conceito ao código para parecer o site de lançamento de um produto real.
 
-**[Ver o site publicado](https://SEU-LINK.vercel.app)** · [Vídeo de navegação](docs/demo.mp4)
+**[Ver o site publicado](https://volta-liart.vercel.app/)** · [Vídeo de navegação](docs/demo.mp4)
 
 ![Prévia do site em navegação](docs/preview.gif)
 
@@ -129,7 +129,7 @@ public/
 Requer Node.js 20 ou superior.
 
 ```bash
-git clone https://github.com/SEU-USUARIO/volta.git
+git clone https://github.com/Sabrina-vlobo/volta.git
 cd volta
 npm install
 npm run dev
@@ -156,4 +156,4 @@ Para publicar, copie `.env.example` para `.env.local` (ou configure na hospedage
 
 ## Autora
 
-**Sabrina** · [LinkedIn](https://www.linkedin.com/in/SEU-PERFIL) · [GitHub](https://github.com/SEU-USUARIO)
+**Sabrina** · [LinkedIn](https://www.linkedin.com/in/sabrina-lobo-522766263/) · [GitHub](https://github.com/Sabrina-vlobo)
